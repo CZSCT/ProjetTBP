@@ -1,0 +1,35 @@
+• Le développement utilisera des langages orientés WEB : HTML, CSS,
+JavaScript et PHP.
+• Il pourra également contenir les FRAMEWORK Bootstrap et JQuery.
+
+REALISATION D’UN CRUD
+
+Création d’un compte (CREATE)
+J’ai réalisé une fenêtre modale pour que l’utilisateur s’inscrive sur le site de la salle de
+sport, en cliquant sur l’avatar en haut à droite de la page d’accueil et qui permet de compléter
+le formulaire d’inscription.
+J’ai utilisé le htmlspecialchar pour éviterl’injection de code. En cas d’erreur, un message s’affichera précisant le champ à corriger.
+De plus, on hash le mot de passe avec Bcrypt pour que le mot de passe soit crypté pour plus de sécurité.
+
+Affichage des données de l’utilisateur (READ) :
+Une fois le compte créé́, l’utilisateur va être redirigé sur le dashboard, qui lui permettra de :
+• Changer son mot de
+passe
+• Se déconnecter
+• Supprimer son compte
+
+Modification du mot de passe de l’utilisateur (UPTATE) :
+
+Sur la page Dashboard, l’utilisateur a la possibilité de changer son mot de passe.
+Pour changer le mot de passe dans ce code, l'utilisateur doit être connecté à l'application.
+Ensuite, il doit fournir l'ancien mot de passe, le nouveau mot de passe et le nouveau mot de passe retapé pour vérification.
+Si toutes les conditions sont remplies, le mot de passe est mis à jour dans la base de données et l'utilisateur est informé du succès de l'opération.
+
+Suppression du compte utilisateur (DELETE):
+
+Sur la page Dashboard, l’utilisateur a la possibilité de supprimer son compte avec un système de token.
+Le système de token dans ce code est utilisé pour identifier de manière unique et sécurisée un utilisateur connecté.
+Ce système de token repose sur l'utilisation de sessions. Lorsqu'un utilisateur se connecte, un token de session est
+généré et stocké dans $_SESSION['user'].
+Ce token est utilisé pour identifier cet utilisateur de manière unique pendant toute sa session.
+En supprimant l'entrée de l'utilisateur correspondante dans la base de données, il est possible de déconnecter cet utilisateur.

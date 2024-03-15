@@ -1,0 +1,49 @@
+.image-container {
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fond semi-transparent */
+  padding: 20px;
+  /* Espace autour du texte */
+  color: white;
+  /* Couleur du texte */
+  border-radius: 5px;
+  /* Coins arrondis pour le conteneur du texte */
+  width: 100%;
+  /* Largeur du conteneur */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-title {
+  font-size: 24px;
+  /* Taille de la police pour le titre */
+  margin-bottom: 10px;
+  /* Espacement sous le titre */
+}
+
+.image-paragraph {
+  font-size: 16px;
+  /* Taille de la police pour le paragraphe */
+  margin-bottom: 20px;
+  /* Espacement sous le paragraphe */
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
