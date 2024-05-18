@@ -1,7 +1,7 @@
 // READ USER
 
 <?php
-session_start(); // Démarrage de la session
+session_start(); // Démarrage de la session.
 require_once 'config.php'; // On inclut la connexion à la base de données
 
 if (!empty($_POST['user']) && !empty($_POST['password'])) // Si il existe les champs user, password et qu'il sont pas vident
