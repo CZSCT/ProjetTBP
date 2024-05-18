@@ -35,7 +35,7 @@ if (!empty($_POST['current_password']) && !empty($_POST['new_password']) && !emp
         
         if ($new_password === $new_password_retype) {
 
-            // On chiffre le mot de passe
+            // On chiffre le mot de passe.
             $cost = ['cost' => 12];
             $new_password = password_hash($new_password, PASSWORD_BCRYPT, $cost);
             // On met à jour la table utiisateurs
