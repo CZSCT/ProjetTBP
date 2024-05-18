@@ -8,7 +8,7 @@ Création d’un compte (CREATE)
 J’ai réalisé une fenêtre modale pour que l’utilisateur s’inscrive sur le site de la salle de
 sport, en cliquant sur l’avatar en haut à droite de la page d’accueil et qui permet de compléter
 le formulaire d’inscription.
-J’ai utilisé le htmlspecialchar pour éviterl’injection de code. En cas d’erreur, un message s’affichera précisant le champ à corriger.
+J’ai utilisé le htmlspecialchar pour éviter l’injection de code. En cas d’erreur, un message s’affichera précisant le champ à corriger.
 De plus, on hash le mot de passe avec Bcrypt pour que le mot de passe soit crypté pour plus de sécurité.
 
 Affichage des données de l’utilisateur (READ) :
