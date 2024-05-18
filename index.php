@@ -47,7 +47,7 @@
 
     <body style="background-color: #413C3C;">
 
-        <!-- l'élément a une hauteur égale à celle de son parent -->
+        <!-- l'élément a une hauteur égale à celle de son parent. -->
         <header class="h-100">
             <nav class="navbar navbar-expand-lg navbar-dark bg-black justify-content-center">
                 <div class="container">
